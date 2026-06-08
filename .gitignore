@@ -1,0 +1,18 @@
+# generated output
+books/
+*.xml
+*.pdf
+*.mscz
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# misc
+goodOnes/
+.claude/
+.jupyter/
