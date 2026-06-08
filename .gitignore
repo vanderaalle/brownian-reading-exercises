@@ -1,8 +1,10 @@
-# generated output
-books/
-*.xml
-*.pdf
+# generated output — root level
+/*.xml
+/*.pdf
 *.mscz
+
+# books: track PDFs, ignore XMLs
+books/*.xml
 
 # Python
 __pycache__/
