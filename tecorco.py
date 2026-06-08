@@ -1,6 +1,6 @@
 from music21 import *
 
-# The Infamous TECORCO Algorithm
+# The Infamous Testa Corpo Coda Algorithm (TECORCO)
 # for note grouping
 # three funcs to group notes
 

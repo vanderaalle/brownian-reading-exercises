@@ -63,7 +63,7 @@ Also requires:
 `harmonizer.py` and `tecorco.py` are bundled in this repo — extracted from the author's personal algorithmic composition library.
 
 - **harmonizer** — given a set of MIDI pitches, finds the closest matching chord symbol by comparing the pitch-class set against a library of common chord qualities (triads, sevenths, extensions).
-- **TECORCO** (*The Infamous Correct Corco Algorithm*) — splits any note or rest that crosses a beat boundary into two tied fragments, ensuring correct rhythmic notation regardless of how durations were originally assigned.
+- **TECORCO** (*The Infamous Testa Corpo Coda Algorithm*) — splits any note or rest that crosses a beat boundary into two tied fragments, ensuring correct rhythmic notation regardless of how durations were originally assigned.
 
 ## Usage
 
