@@ -31,6 +31,25 @@ For `gen_16th`, notes crossing beat boundaries are split and tied by the [TECORC
 | `6-string exercise.ipynb` | Interactive notebook: explore, tweak, preview single pieces |
 | `generate_books.py` | Batch script: 10 books × 3 processes → 30 PDFs |
 
+## Ready-to-use exercise books
+
+30 PDFs are included in [`books/`](books/) — 10 independent books per rhythm variant, 10 pieces each.
+
+| Book | Quarter notes | Eighth notes + rests | 16th notes + rests |
+|:---:|:---:|:---:|:---:|
+| 01 | [book_01_quarter.pdf](books/book_01_quarter.pdf) | [book_01_eighth.pdf](books/book_01_eighth.pdf) | [book_01_16th.pdf](books/book_01_16th.pdf) |
+| 02 | [book_02_quarter.pdf](books/book_02_quarter.pdf) | [book_02_eighth.pdf](books/book_02_eighth.pdf) | [book_02_16th.pdf](books/book_02_16th.pdf) |
+| 03 | [book_03_quarter.pdf](books/book_03_quarter.pdf) | [book_03_eighth.pdf](books/book_03_eighth.pdf) | [book_03_16th.pdf](books/book_03_16th.pdf) |
+| 04 | [book_04_quarter.pdf](books/book_04_quarter.pdf) | [book_04_eighth.pdf](books/book_04_eighth.pdf) | [book_04_16th.pdf](books/book_04_16th.pdf) |
+| 05 | [book_05_quarter.pdf](books/book_05_quarter.pdf) | [book_05_eighth.pdf](books/book_05_eighth.pdf) | [book_05_16th.pdf](books/book_05_16th.pdf) |
+| 06 | [book_06_quarter.pdf](books/book_06_quarter.pdf) | [book_06_eighth.pdf](books/book_06_eighth.pdf) | [book_06_16th.pdf](books/book_06_16th.pdf) |
+| 07 | [book_07_quarter.pdf](books/book_07_quarter.pdf) | [book_07_eighth.pdf](books/book_07_eighth.pdf) | [book_07_16th.pdf](books/book_07_16th.pdf) |
+| 08 | [book_08_quarter.pdf](books/book_08_quarter.pdf) | [book_08_eighth.pdf](books/book_08_eighth.pdf) | [book_08_16th.pdf](books/book_08_16th.pdf) |
+| 09 | [book_09_quarter.pdf](books/book_09_quarter.pdf) | [book_09_eighth.pdf](books/book_09_eighth.pdf) | [book_09_16th.pdf](books/book_09_16th.pdf) |
+| 10 | [book_10_quarter.pdf](books/book_10_quarter.pdf) | [book_10_eighth.pdf](books/book_10_eighth.pdf) | [book_10_16th.pdf](books/book_10_16th.pdf) |
+
+Run `generate_books.py` to regenerate a fresh set at any time.
+
 ## Dependencies
 
 ```
