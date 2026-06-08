@@ -21,7 +21,7 @@ Each run produces a fresh set of pieces exported as MusicXML (and optionally PDF
 | `gen_eighth` | eighth notes | ~25 % per slot |
 | `gen_16th` | mixed 16th / 8th / dotted-8th / quarter | ~25 % per slot |
 
-For `gen_16th`, notes crossing beat boundaries are split and tied by the [TECORCO](https://github.com/vanderaalle/comune) algorithm.
+For `gen_16th`, notes crossing beat boundaries are split and tied by **TECORCO**.
 
 ## Files
 
@@ -60,7 +60,10 @@ Also requires:
 - `numpy` (`pip install numpy`)
 - [MuseScore 4](https://musescore.org) AppImage for PDF export (path configured in `generate_books.py`)
 
-`harmonizer.py` and `tecorco.py` are bundled in this repo.
+`harmonizer.py` and `tecorco.py` are bundled in this repo — extracted from the author's personal algorithmic composition library.
+
+- **harmonizer** — given a set of MIDI pitches, finds the closest matching chord symbol by comparing the pitch-class set against a library of common chord qualities (triads, sevenths, extensions).
+- **TECORCO** (*The Infamous Correct Corco Algorithm*) — splits any note or rest that crosses a beat boundary into two tied fragments, ensuring correct rhythmic notation regardless of how durations were originally assigned.
 
 ## Usage
 
