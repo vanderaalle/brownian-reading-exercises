@@ -38,8 +38,10 @@ pip install music21 showscore
 ```
 
 Also requires:
-- [`harmonizer`](https://github.com/vanderaalle/comune) and `tecorco` from the `comune` library (path configured in scripts)
+- `numpy` (`pip install numpy`)
 - [MuseScore 4](https://musescore.org) AppImage for PDF export (path configured in `generate_books.py`)
+
+`harmonizer.py` and `tecorco.py` are bundled in this repo.
 
 ## Usage
 

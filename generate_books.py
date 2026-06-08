@@ -7,8 +7,6 @@ import sys
 import subprocess
 import datetime
 
-sys.path.append('/home/andrea/musica/muProj/comune')
-
 from music21 import stream, instrument, metadata, tempo, expressions, layout, note
 import generators
 

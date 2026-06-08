@@ -1,7 +1,5 @@
 import random
 import math
-import sys
-sys.path.append('/home/andrea/musica/muProj/comune')
 
 from music21 import *
 import harmonizer
