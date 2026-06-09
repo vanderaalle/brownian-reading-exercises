@@ -6,7 +6,9 @@ import harmonizer
 import tecorco
 
 REST_PROB             = 0.25
-TREBLE_THRESHOLD_MIDI = 124
+LOW_MIDI              = 35    # lowest note: B1 for 6-string bass; E2 (40) for 4-string
+RANGE_SEMITONES       = 34    # range covered by the scale walk; ~2 octaves for 4-string
+TREBLE_THRESHOLD_MIDI = 124   # set lower (e.g. 55) to enable automatic treble-8vb clef changes
 BASS_THRESHOLD_MIDI   = 124
 
 _BLACK_KEYS = {1, 3, 6, 8, 10}
@@ -37,7 +39,7 @@ def _apply_bass_treble_clefs(measured,
 def _build_scale():
     p = random.randint(0, 3)
     scle = [p]
-    while p <= 34:
+    while p <= RANGE_SEMITONES:
         p = p + random.randint(1, 3)
         scle.append(p)
     return scle
@@ -53,13 +55,13 @@ def _build_mel(scle):
         elif i < 0:
             i = abs(i)
         mel_i.append(i)
-    pitches = [scle[x] + 23 + 12 for x in mel_i]
+    pitches = [scle[x] + LOW_MIDI for x in mel_i]
     return pitches + pitches[::-1]
 
 
 def _scale_range(scle):
-    lo_p = pitch.Pitch(); lo_p.midi = scle[0]  + 23 + 12
-    hi_p = pitch.Pitch(); hi_p.midi = scle[-1] + 23 + 12
+    lo_p = pitch.Pitch(); lo_p.midi = scle[0]  + LOW_MIDI
+    hi_p = pitch.Pitch(); hi_p.midi = scle[-1] + LOW_MIDI
     avg_step = round((scle[-1] - scle[0]) / max(len(scle) - 1, 1), 1)
     return lo_p.nameWithOctave, hi_p.nameWithOctave, scle[-1] - scle[0], avg_step
 

@@ -1,7 +1,17 @@
 # 6-String Bass Reading Exercises
 
-Algorithmic generator of sight-reading exercises for **6-string electric bass** (low B – high C).  
+Algorithmic generator of sight-reading exercises, defaults set for **6-string electric bass** (low B – high C).  
 Each run produces a fresh set of pieces exported as MusicXML (and optionally PDF via MuseScore).
+
+By adjusting two constants in `generators.py` the same engine works for **any instrument and clef**:
+
+| Parameter | Default (6-string bass) | Example: 4-string bass |
+|---|---|---|
+| `LOW_MIDI` | `35` (B1) | `40` (E2) |
+| `RANGE_SEMITONES` | `34` | `24` |
+| `TREBLE_THRESHOLD_MIDI` | `124` (bass clef only) | `55` (auto treble-8vb above D4) |
+
+Set `TREBLE_THRESHOLD_MIDI` to a musically meaningful value to get automatic clef changes; leave it at 124 to stay on bass clef throughout.
 
 ## Algorithmic model
 
