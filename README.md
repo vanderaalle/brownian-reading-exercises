@@ -1,4 +1,4 @@
-# 6-String Bass Reading Exercises
+# Brownian Reading Exercises
 
 Algorithmic generator of sight-reading exercises, defaults set for **6-string electric bass** (low B – high C).  
 Each run produces a fresh set of pieces exported as MusicXML (and optionally PDF via MuseScore).
